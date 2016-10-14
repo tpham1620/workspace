@@ -1,0 +1,129 @@
+Stevenson, Total Order = $6860.00
+
+Couch1 1 $800.00, Item Value = $800.00
+
+Couch2 1 $800.00, Item Value = $800.00
+
+Couch3 1 $800.00, Item Value = $800.00
+
+Couch5 1 $800.00, Item Value = $800.00
+
+Couch4 1 $800.00, Item Value = $800.00
+
+Couch6 1 $800.00, Item Value = $800.00
+
+Couch7 1 $800.00, Item Value = $800.00
+
+Chair 2 $350.00, Item Value = $700.00
+
+Table 1 $500.00, Item Value = $500.00
+
+Clock 2 $30.00, Item Value = $60.00
+
+
+Lazlo, Total Order = $1380.00
+
+Fridge 1 $1200.00, Item Value = $1200.00
+
+Vase 3 $40.00, Item Value = $120.00
+
+Mirror 1 $60.00, Item Value = $60.00
+
+
+Stevenson, Total Order = $800.00
+
+Couch8 1 $800.00, Item Value = $800.00
+
+
+Smith, Total Order = $332.50
+
+Microwave 1 $230.00, Item Value = $230.00
+
+Sweater 3 $22.50, Item Value = $67.50
+
+Candle 10 $3.50, Item Value = $35.00
+
+
+Flintstone, Total Order = $85.00
+
+Plate 5 $10.00, Item Value = $50.00
+
+Bowl 5 $7.00, Item Value = $35.00
+
+
+Reich, Total Order = $37.50
+
+Umbrella 3 $12.50, Item Value = $37.50
+
+
+Reich1, Total Order = $37.50
+
+Umbrella 3 $12.50, Item Value = $37.50
+
+
+Reich2, Total Order = $37.50
+
+Umbrella 3 $12.50, Item Value = $37.50
+
+
+Reich3, Total Order = $37.50
+
+Umbrella 3 $12.50, Item Value = $37.50
+
+
+Reich4, Total Order = $37.50
+
+Umbrella 3 $12.50, Item Value = $37.50
+
+
+Reich5, Total Order = $37.50
+
+Umbrella 3 $12.50, Item Value = $37.50
+
+
+Reich6, Total Order = $37.50
+
+Umbrella 3 $12.50, Item Value = $37.50
+
+
+Reich7, Total Order = $37.50
+
+Umbrella 3 $12.50, Item Value = $37.50
+
+
+Reich8, Total Order = $37.50
+
+Umbrella 3 $12.50, Item Value = $37.50
+
+
+Reich9, Total Order = $37.50
+
+Umbrella 3 $12.50, Item Value = $37.50
+
+
+Reich10, Total Order = $37.50
+
+Umbrella 3 $12.50, Item Value = $37.50
+
+
+Reich11, Total Order = $37.50
+
+Umbrella 3 $12.50, Item Value = $37.50
+
+
+Reich12, Total Order = $37.50
+
+Umbrella 3 $12.50, Item Value = $37.50
+
+
+Reich13, Total Order = $37.50
+
+Umbrella 3 $12.50, Item Value = $37.50
+
+
+Reich14, Total Order = $37.50
+
+Umbrella 3 $12.50, Item Value = $37.50
+
+
+

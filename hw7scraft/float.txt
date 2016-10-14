@@ -1,0 +1,166 @@
+/*
+ * FloatPointFormat.c
+ *
+ *  Created on: Mar 9, 2015
+ *      Author: PaCMaN
+ */
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+struct f{
+	unsigned int sign: 1;
+	unsigned int exp: 8;
+	unsigned int frac: 23;
+};
+
+typedef struct f Float;
+
+//void getParts(float, int*, float*);
+int getExp(float, float*);
+void fracBins(float, char*);
+void expBins(int, char*);
+void appExp(float, int);
+int power(int,int);
+
+int main(void){
+
+	setvbuf(stdout, NULL, _IONBF, 0);
+	
+	int *int_part, exp, sign = 0;
+	float *frac_part = NULL, frac = 0.0;
+	float input = 0.0;
+	char exp_bin[9], frac_bin[24];
+
+	printf("Enter a float number: ");
+	scanf("%f", &input);
+	if(input<0){
+		sign = 1;
+		input = 0 - input;
+	}
+
+
+	//getParts(input, int_part, frac_part);
+	exp = getExp(input, &frac);
+
+
+
+	expBins(exp, exp_bin);
+	fracBins(frac, frac_bin);
+	appExp(frac, exp);
+
+	printf("\nyour float was read: %f", input);
+	printf("\nyour float in 32 bits: %d%s%s", sign, exp_bin, frac_bin);
+	printf("\nsign: %d", sign);
+	printf("\nexponent binary: %s", exp_bin);
+	printf("\nfraction binary: %s", frac_bin);
+
+	return 0;
+}
+
+int getExp(float input, float* frac){
+	int exp = 0;
+	if((int)input == 1){
+		*frac = input;
+		return 0;
+	}
+	if((int)input > 1){
+		while((int)input > 1){
+			input = input/2;
+			*frac = input;
+			exp++;
+		}
+	}else{
+		while((int)input < 1){
+			input = input*2;
+			*frac = input;
+			exp--;
+		}
+	}
+	return exp;
+}
+
+void fracBins(float frac, char *bins){
+	printf("creating the fraction:\n");
+	char toReturn[24];
+	strcpy(toReturn, "00000000000000000000000");
+	int i = 1;
+	float createFrac = 1.0f;
+	printf("fraction = %f (the implicit 1)\n", createFrac);
+	frac = frac-1;
+	while(frac != 0 && i < 24){
+		float p = 1.0f/power(2,i);
+		if(frac >= p){
+			toReturn[i-1] = '1';
+			frac = frac - p;
+			createFrac+=p;
+			printf("fraction = %f, after adding %f\n", createFrac, p);
+		}else{
+			toReturn[i-1] = '0';
+			printf("fraction = %f, after skipping %f\n", createFrac, p);
+		}
+		i++;
+	}
+	strcpy(bins,toReturn);
+}
+
+void expBins(int e, char *bins){
+	char toReturn[9];
+	strcpy(toReturn, "00000000");
+	int exp = 127+e;
+	int i = 7;
+	while(exp > 0){
+		if(exp&1){
+			toReturn[i] = '1';
+		}else{
+			toReturn[i] = '0';
+		}
+		exp>>=1;
+		i--;
+	}
+	strcpy(bins, toReturn);
+
+}
+
+void appExp(float frac, int exp){
+	printf("Applying the exponent:\n unbiased exponent = %d\n", exp);
+	int i, sign = 0;
+	if(exp<0){
+		sign = 1;
+		exp = 0-exp;
+	}
+	for(i = 0; i < exp; i++){
+		switch(sign){
+		case 0:{
+			frac = frac*2.0f;
+			printf("times 2 = %f\n", frac);
+			break;
+		}
+		case 1:{
+			frac = frac/2.0f;
+			printf("divided 2 = %f\n", frac);
+			break;
+		}
+		default: break;
+		}
+	}
+	printf("\nFinal Answer: %f", frac);
+}
+
+int power(int b, int e){
+	if (e == 0) return 1;
+	if (e == 1) return b;
+
+	int i = 0, toReturn = b;
+	for(i = 1; i < e; i++){
+		toReturn = toReturn*b;
+	}
+
+	return toReturn;
+}
+/*
+void getParts(float input, int * i, float *f){
+	i = (int)input;
+	f = input - (int)input;
+}
+ */

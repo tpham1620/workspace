@@ -1,0 +1,166 @@
+PID: 1 - Mouse click input - Blocked at quantum 222 of 1571 total - awaiting completion.
+
+PID: 2 - Display output - Blocked at quantum 142 of 1189 total - awaiting completion.
+
+PID: 1 - I/O completion interrupt  - Mouse input - back in ready queue at quantum 222 of 1571 total.
+
+PID 3 - MutexLock(m1) - Blocked at quantum 115 of 1402 total.
+
+PID: 2 - I/O completion interrupt  - Display output - back in ready queue at quantum 142 of 1189 total.
+
+PID: 4 - Display output - Blocked at quantum 210 of 1496 total - awaiting completion.
+
+PID 5 - MutexLock(m1) - Blocked at quantum 7 of 1026 total.
+
+PID: 4 - I/O completion interrupt  - Display output - back in ready queue at quantum 210 of 1496 total.
+
+PID 6 - MutexLock(m1) - Blocked at quantum 115 of 1817 total.
+
+PID 7 - MutexLock(m4) - Blocked at quantum 29 of 1661 total.
+
+PID: 8 - Display output - Blocked at quantum 9 of 1014 total - awaiting completion.
+
+PID 9 - MutexLock(m4) - Blocked at quantum 9 of 1503 total.
+
+PID 10 - MutexLock(m1) - Blocked at quantum 6 of 1616 total.
+
+PID: 11 - Printer output - Blocked at quantum 21 of 1964 total - awaiting completion.
+
+PID 12 - MutexLock(m3) - Blocked at quantum 10 of 1702 total.
+
+PID: 8 - I/O completion interrupt  - Display output - back in ready queue at quantum 9 of 1014 total.
+
+PID: 13 - Display output - Blocked at quantum 44 of 1581 total - awaiting completion.
+
+PID: 14 - Mouse click input - Blocked at quantum 1 of 1092 total - awaiting completion.
+
+PID: 11 - I/O completion interrupt  - Printer output - back in ready queue at quantum 21 of 1964 total.
+
+PID: 14 - I/O completion interrupt  - Mouse input - back in ready queue at quantum 1 of 1092 total.
+
+PID 15 - MutexLock(m4) - Blocked at quantum 151 of 1443 total.
+
+PID 16 - MutexLock(m1) - Blocked at quantum 20 of 1101 total.
+
+PID 17 - MutexLock(m4) - Blocked at quantum 74 of 1537 total.
+
+PID: 13 - I/O completion interrupt  - Display output - back in ready queue at quantum 44 of 1581 total.
+
+PID 18 - MutexLock(m2) - Blocked at quantum 13 of 1057 total.
+
+PID 19 - MutexLock(m2) - Blocked at quantum 95 of 1293 total.
+
+PID 20 - MutexLock(m3) - Blocked at quantum 86 of 1297 total.
+
+PID: 21 - Display output - Blocked at quantum 37 of 1762 total - awaiting completion.
+
+PID 22 - MutexLock(m1) - Blocked at quantum 76 of 1495 total.
+
+PID: 23 - Mouse click input - Blocked at quantum 23 of 1340 total - awaiting completion.
+
+PID: 23 - I/O completion interrupt  - Mouse input - back in ready queue at quantum 23 of 1340 total.
+
+PID: 24 - Display output - Blocked at quantum 15 of 1040 total - awaiting completion.
+
+PID: 25 - Display output - Blocked at quantum 7 of 1268 total - awaiting completion.
+
+PID: 21 - I/O completion interrupt  - Display output - back in ready queue at quantum 37 of 1762 total.
+
+PID 26 - MutexLock(m3) - Blocked at quantum 100 of 1269 total.
+
+PID: 27 - Printer output - Blocked at quantum 4 of 1079 total - awaiting completion.
+
+PID: 27 - I/O completion interrupt  - Printer output - back in ready queue at quantum 4 of 1079 total.
+
+PID 28 - MutexLock(m3) - Blocked at quantum 46 of 1145 total.
+
+PID 29 - MutexLock(m4) - Blocked at quantum 59 of 1979 total.
+
+PID: 30 - Mouse click input - Blocked at quantum 52 of 1984 total - awaiting completion.
+
+PID: 24 - I/O completion interrupt  - Display output - back in ready queue at quantum 15 of 1040 total.
+
+PID: 30 - I/O completion interrupt  - Mouse input - back in ready queue at quantum 52 of 1984 total.
+
+PID: 31 - Printer output - Blocked at quantum 125 of 1995 total - awaiting completion.
+
+PID: 31 - I/O completion interrupt  - Printer output - back in ready queue at quantum 125 of 1995 total.
+
+PID: 32 - Mouse click input - Blocked at quantum 74 of 1964 total - awaiting completion.
+
+PID: 33 - Mouse click input - Blocked at quantum 12 of 1006 total - awaiting completion.
+
+PID 1 - MutexLock(m2) - Blocked at quantum 223 of 1571 total.
+
+PID: 32 - I/O completion interrupt  - Mouse input - back in ready queue at quantum 74 of 1964 total.
+
+PID 2 - MutexLock(m3) - Blocked at quantum 215 of 1189 total.
+
+PID: 25 - I/O completion interrupt  - Display output - back in ready queue at quantum 7 of 1268 total.
+
+PID 4 - MutexLock(m2) - Blocked at quantum 224 of 1496 total.
+
+PID: 33 - I/O completion interrupt  - Mouse input - back in ready queue at quantum 12 of 1006 total.
+
+PID: 8 - Printer output - Blocked at quantum 116 of 1014 total - awaiting completion.
+
+PID 11 - MutexLock(m4) - Blocked at quantum 203 of 1964 total.
+
+PID 14 - MutexLock(m3) - Blocked at quantum 9 of 1092 total.
+
+PID 13 - MutexLock(m4) - Blocked at quantum 48 of 1581 total.
+
+PID: 8 - I/O completion interrupt  - Printer output - back in ready queue at quantum 116 of 1014 total.
+
+PID: 23 - Printer output - Blocked at quantum 129 of 1340 total - awaiting completion.
+
+PID: 23 - I/O completion interrupt  - Printer output - back in ready queue at quantum 129 of 1340 total.
+
+PID: 21 - Mouse click input - Blocked at quantum 173 of 1762 total - awaiting completion.
+
+PID 27 - MutexLock(m1) - Blocked at quantum 58 of 1079 total.
+
+PID: 21 - I/O completion interrupt  - Mouse input - back in ready queue at quantum 173 of 1762 total.
+
+PID 24 - MutexLock(m2) - Blocked at quantum 83 of 1040 total.
+
+PID: 30 - Printer output - Blocked at quantum 67 of 1984 total - awaiting completion.
+
+PID: 31 - Display output - Blocked at quantum 130 of 1995 total - awaiting completion.
+
+PID: 30 - I/O completion interrupt  - Printer output - back in ready queue at quantum 67 of 1984 total.
+
+PID 32 - MutexLock(m2) - Blocked at quantum 185 of 1964 total.
+
+PID: 3 - Display output - Blocked at quantum 128 of 1402 total - awaiting completion.
+
+PID 25 - MutexLock(m1) - Blocked at quantum 18 of 1268 total.
+
+PID 33 - MutexLock(m4) - Blocked at quantum 44 of 1006 total.
+
+PID 8 - MutexLock(m3) - Blocked at quantum 133 of 1014 total.
+
+PID: 23 - Display output - Blocked at quantum 134 of 1340 total - awaiting completion.
+
+PID 21 - MutexLock(m4) - Blocked at quantum 180 of 1762 total.
+
+PID 30 - MutexLock(m1) - Blocked at quantum 87 of 1984 total.
+
+PID: 31 - I/O completion interrupt  - Display output - back in ready queue at quantum 130 of 1995 total.
+
+PID: 12 - Display output - Blocked at quantum 50 of 1702 total - awaiting completion.
+
+PID 31 - MutexLock(m3) - Blocked at quantum 138 of 1995 total.
+
+PID: 3 - I/O completion interrupt  - Display output - back in ready queue at quantum 128 of 1402 total.
+
+PID 3 - MutexLock(m4) - Blocked at quantum 244 of 1402 total.
+
+PID: 23 - I/O completion interrupt  - Display output - back in ready queue at quantum 134 of 1340 total.
+
+PID 23 - MutexLock(m1) - Blocked at quantum 195 of 1340 total.
+
+PID: 12 - I/O completion interrupt  - Display output - back in ready queue at quantum 50 of 1702 total.
+
+PID 12 - MutexLock(m4) - Blocked at quantum 53 of 1702 total.
+

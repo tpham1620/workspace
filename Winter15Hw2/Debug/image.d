@@ -1,0 +1,1 @@
+image.d: ../image.c

@@ -1,0 +1,1 @@
+Trans.d: ../Trans.c

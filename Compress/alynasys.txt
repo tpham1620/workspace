@@ -1,0 +1,194 @@
+/**
+ * Run-time Analysis for Huffman's algorithm
+ * @author Tan Pham
+ * Created 01/10/2015
+ * *****************************************************************************************
+ * 
+ */
+
+
+
+
+	//This constructor is the whole Huffman's algorithm.
+
+	//According to estimate calculation below, we got
+
+	public CodingTree(String message){
+		text = message;
+		createTree(text);				//O(nm)
+		createCode();					//O(m*lg(2m)
+		readCode();					//O(lg(2m))
+		bits = encode();				//O(n)
+	}
+
+
+	Total time = O(nm) + O(m*lg(2m) + O(lg(2m)) + O(n)
+		   
+		   = O(nm)    , since n is much bigger than m.
+
+
+
+
+	*******************************************************************************************************************
+	private void createTree(String message){
+
+		//This line cost O(nm) operation according to calculate  freqCount function below
+		FreqCount count = new FreqCount(message); 		//O(nm)
+
+		
+		for(int i = 0; i < count.size(); i++){
+
+			//MyPriorityQueue offer() method take linear time
+			prq.offer(new Node(count.ch.get(i).toString(), count.freq.get(i))); 	//O(m)
+		}
+
+		
+		while (prq.size()>2){
+			
+			// MyPriorityQueue poll() function take linear time
+			Node lft = prq.poll();			//O(m)
+			Node rgt = prq.poll();			//O(m)
+			root = new Node(lft,rgt);		//constant
+			prq.offer(root);			//O(m)
+		}
+
+		
+		Node lft = prq.poll();				//O(m)
+		Node rgt = prq.poll();				//O(m)
+		root = new Node(lft,rgt);			//O(m)
+	}
+	
+	The for loop run m times since it has m unique characters
+	==> For loop time = O(m^2)
+
+	The while loop runs m/2 times, because it polls out 2 items at a time.
+	==> While loop time = m/2(3*O(m)+constant)
+			    = O(m^2)
+
+	Total time = O(nm) + 2*O(m^2) + 3*O(m)
+	In the large text file, the length of the file is much bigger than the number of
+	unique characters, 
+		so n >> m
+		mean n*m >> m^2
+
+	Thus, total time = O(nm)
+
+
+
+********************************************************************************************************************
+	/**
+	 * A recursive function that read the code of each node of the tree
+	 * then store the code in to the map codes, if the node content a character.
+	 * @param node
+	 */
+	private void readCode(Node node){
+		if(node.isLeaf()){
+			codes.put(node.val.charAt(0), node.code);		//constant
+		}else{
+			readCode(node.left);
+			readCode(node.right);
+		}
+	}
+
+	Since the tree has m leaves, it has at most 2m nodes.
+	This function always traverse to the leaves so it takes lg(2m) operation
+
+	Total Time = O(lg2m)
+
+
+
+*****************************************************************************************************************
+	/**
+	 * A recursive function to assign the code for each node of the tree
+	 * @param node
+	 */
+	private void createCode(Node node) {	
+		if(node.left != null ){							//constant
+			node.left.code = node.code + "0";				//constant
+			createCode(node.left);
+		}
+		if(node.right != null){							//constant
+			node.right.code = node.code + "1";				//constant
+			createCode(node.right);
+		}
+
+	}
+
+	This method traverse to every node in the tree. The tree has m leaves, it has at most 2*m nodes
+	In the worst case (leaves), it has to traverse down the whole tree, that take lg(2m)
+
+	Total time = O(2mlg(2m))
+
+
+
+
+******************************************************************************************************************
+	/**
+	 * Encoding the text in to binary string
+	 * @return a string of bits
+	 */
+	public String encode(){
+		StringBuilder str = new StringBuilder();			//constant
+
+		for(int i = 0; i<text.length();i++){				//constant
+			str.append(codes.get(text.charAt(i)));			//constant
+		}
+		bits = str.toString();						//constant
+
+		return  bits;
+	}
+
+	The for loop runs n times for the length of the text
+		
+	Total time = O(n)
+
+
+
+
+************************************************************************************************************
+
+	/**
+	 * Run time estimate for the conFreq() method.
+	 * @author Tan Pham
+	 *
+	 */
+	private class FreqCount{
+		String message = "";
+
+		ArrayList<Character> ch = new ArrayList<Character>();
+		ArrayList<Integer> freq = new ArrayList<Integer>();
+
+
+		FreqCount(String sms){
+			message = sms;
+			countFreq();
+		}
+		
+
+
+
+		****************************************************************************************************
+		void countFreq(){
+			for (int i = 0; i < message.length(); i++ ){			//constant
+				boolean found = false;					//constant
+				for (int j = 0; j< ch.size(); j++){			//constant
+					if (message.charAt(i) == (ch.get(j))){		//constant
+						int temp = freq.get(j) + 1;		//constant
+						freq.set(j, temp);			//constant
+						found = true;				//constant
+					}
+				}
+				if(!found){						//constant		
+					ch.add(message.charAt(i));			//constant
+					freq.add(1);					//constant
+				}
+			}
+		}
+		
+		The inner for loop runs m times in the worst case (m is the number of unique character)
+		The outer for loop runs n time (n is the length of the text)
+
+		Total time = O(n*m)
+
+		****************************************************************************************************
+		

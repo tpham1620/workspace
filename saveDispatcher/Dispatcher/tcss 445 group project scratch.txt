@@ -1,0 +1,55 @@
+Dispatcher:{
+//Fields
+	driverList - ArrayList<Driver>
+	onDutyDriver - ArrayList<Driver>
+	currentJob - ArrayList<Job>
+//functions
+	addDriver(Driver)
+	removeDriver(Driver)
+	addJob(Job)
+	updateOnDutyDriver()
+	getClosestDriver(Job) - Driver
+	assignJob(Job, Driver)
+	viewDriverDetails(Driver)
+
+}
+
+Driver:{
+//Fields
+	driverID - int
+	password - String
+	driverName - String
+	phone - String
+	status - Enum{onduty, offduty, haspassenger}
+	currentJob - Job
+	jobAccepted - ArrayList<Job>
+	jobRejected - ArrayList<Job>
+//functions
+	setStatus()
+	sendGPS(GPS) - boolean
+	receiveAssignment()
+	acceptAssignment - boolean
+	updateJobStatus(Job)
+}
+
+Job:{
+//Fields
+	jobName - String
+	jobID - int
+	pickLoc	- GPS
+	dropLoc	- GPS
+	status - Enum{unassigned, assigned, completed}
+//functions
+	Job(jobName, jobID, picLoc, dropLoc)
+	getters, setters
+	
+}
+
+GPS:{
+//Fields
+	latitude - double
+	longitude - double
+//functions
+	GPS(double, double)
+	getDistance(GPS, GPS) - double
+}

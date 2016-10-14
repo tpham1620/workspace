@@ -1,0 +1,1 @@
+FloatPointFormat.d: ../FloatPointFormat.c

@@ -1,0 +1,162 @@
+Please select role for player 1: 
+H for Human, A for AI with Minmax algorithm, P for AI with pruning alpha-beta algorithm.
+h
+Player 1 name?
+human
+Please select role for player 1: 
+H for Human, A for AI with Minmax algorithm, P for AI with pruning alpha-beta algorithm.
+p
+Player 2 name?
+alphabeta
+Player 1 name: human
+Player 2 name: alphabeta
+Player 1 token: BLACK
+Player 2 token: WHITE
+Player go first (random): alphabeta
+Starting Game.
+ -0-1-2 | -3-4-5
+0 - - - |  - - -
+1 - - - |  - - -
+2 - - - |  - - -
+ - - - - - - - -
+3 - - - |  - - -
+4 - - - |  - - -
+5 - - - |  - - -
+
+-------------------------------------------------
+alphabeta turn!
+alphabeta made move: 2/4 1LEFT
+Nodes expanded for this move: 628
+ -0-1-2 | -3-4-5
+0 - - - |  - - -
+1 - - - |  - - -
+2 - - - |  - - -
+ - - - - - - - -
+3 - - - |  - - -
+4 W - - |  - - -
+5 - - - |  - - -
+
+-------------------------------------------------
+human turn!
+Enter move as a form: Block/Unit TwistBlock+Direction.1/1 2l
+human made move: 1/1 2LEFT
+Nodes expanded for this move: 0
+ -0-1-2 | -3-4-5
+0 B - - |  - - -
+1 - - - |  - - -
+2 - - - |  - - -
+ - - - - - - - -
+3 - - - |  - - -
+4 W - - |  - - -
+5 - - - |  - - -
+
+-------------------------------------------------
+alphabeta turn!
+alphabeta made move: 2/5 3LEFT
+Nodes expanded for this move: 826
+ -0-1-2 | -3-4-5
+0 B - - |  - - -
+1 - - - |  - - -
+2 - - - |  - - -
+ - - - - - - - -
+3 - - - |  - - -
+4 - W - |  - - -
+5 - W - |  - - -
+
+-------------------------------------------------
+human turn!
+Enter move as a form: Block/Unit TwistBlock+Direction.1/2 2l
+human made move: 1/2 2LEFT
+Nodes expanded for this move: 0
+ -0-1-2 | -3-4-5
+0 B B - |  - - -
+1 - - - |  - - -
+2 - - - |  - - -
+ - - - - - - - -
+3 - - - |  - - -
+4 - W - |  - - -
+5 - W - |  - - -
+
+-------------------------------------------------
+alphabeta turn!
+alphabeta made move: 2/2 1RIGHT
+Nodes expanded for this move: 1016
+ -0-1-2 | -3-4-5
+0 - - B |  - - -
+1 - - B |  - - -
+2 - - - |  - - -
+ - - - - - - - -
+3 - W - |  - - -
+4 - W - |  - - -
+5 - W - |  - - -
+
+-------------------------------------------------
+human turn!
+Enter move as a form: Block/Unit TwistBlock+Direction.1/9 1l
+human made move: 1/9 1LEFT
+Nodes expanded for this move: 0
+ -0-1-2 | -3-4-5
+0 B B B |  - - -
+1 - - - |  - - -
+2 - - - |  - - -
+ - - - - - - - -
+3 - W - |  - - -
+4 - W - |  - - -
+5 - W - |  - - -
+
+-------------------------------------------------
+alphabeta turn!
+alphabeta made move: 2/4 3LEFT
+Nodes expanded for this move: 994
+ -0-1-2 | -3-4-5
+0 B B B |  - - -
+1 - - - |  - - -
+2 - - - |  - - -
+ - - - - - - - -
+3 - - - |  - - -
+4 W W W |  - - -
+5 - W - |  - - -
+
+-------------------------------------------------
+human turn!
+Enter move as a form: Block/Unit TwistBlock+Direction.2/1 3l
+human made move: 2/1 3LEFT
+Nodes expanded for this move: 0
+ -0-1-2 | -3-4-5
+0 B B B |  B - -
+1 - - - |  - - -
+2 - - - |  - - -
+ - - - - - - - -
+3 - W - |  - - -
+4 - W W |  - - -
+5 - W - |  - - -
+
+-------------------------------------------------
+alphabeta turn!
+alphabeta made move: 0/8 1RIGHT
+Nodes expanded for this move: 1674
+ -0-1-2 | -3-4-5
+0 - - B |  B - -
+1 W - B |  - - -
+2 - - B |  - - -
+ - - - - - - - -
+3 - W - |  - - -
+4 - W W |  - - -
+5 - W - |  - - -
+
+-------------------------------------------------
+human turn!
+Enter move as a form: Block/Unit TwistBlock+Direction.2/2 1l
+human made move: 2/2 1LEFT
+Nodes expanded for this move: 0
+ -0-1-2 | -3-4-5
+0 B B B |  B B -
+1 - - - |  - - -
+2 - W - |  - - -
+ - - - - - - - -
+3 - W - |  - - -
+4 - W W |  - - -
+5 - W - |  - - -
+
+Win detected
+Winner is BLACK
