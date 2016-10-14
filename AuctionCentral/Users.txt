@@ -1,0 +1,6 @@
+adam; bidder
+tom; bidder
+marry; ace
+daisy; ace
+jack; npo
+mark; npo
