@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+/**
+ * Buffer object that process the coming packets.
+ * @author Tan Pham
+ * @version 2016.11.2
+ *
+ */
+
+public class Buffer {
+    public Buffer(int size) {
+        this.size_ = size;
+        this.finish_time_ = new ArrayList<Integer>();
+    }
+
+    public Response Process(Request request) {
+        // write your code here
+        return new Response(false, -1);
+    }
+
+    private int size_;
+    private ArrayList<Integer> finish_time_;
+}

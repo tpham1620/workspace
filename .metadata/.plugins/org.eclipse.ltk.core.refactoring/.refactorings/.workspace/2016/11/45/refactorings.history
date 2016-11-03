@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;NetworkPacketSimulator&apos; to &apos;NetworkPackeagesSimulator&apos;&#x0D;&#x0A;- Original element: &apos;NetworkPacketSimulator&apos;&#x0D;&#x0A;- Renamed element: &apos;NetworkPacketSimulator&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;NetworkPacketSimulator&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=NetworkPacketSimulator" name="NetworkPackeagesSimulator" references="true" stamp="1478126773680" version="1.0"/>
+</session>
